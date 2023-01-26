@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab4.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Dil Kholkey Resturent</title>
+    <script src="handlebars-v4.7.7.js"></script>
+</head>
+<h1 id="head1"> Dil Kholkey Restaurant &#x1F354 </h1>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a style="margin-right: 200px;" href="#home" class="active">Home</a>
+        <a style="margin-right: 230px;" href="#news" class="nav" >Menu</a>
+        <a style="margin-right: 230px;" href="#contact" class="nav">Contact Us</a>
+        <a style="margin-right: 230px;" href="#about" class="nav">About</a>
+        <a href="#cart"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        
+    </div>
+      
+      
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      function clickable(){
+        alert("Item added!!!");
+      }
+      </script>
+
+<div class="border">
+    
+
+    <h1 id="breakfast"> Breakfast Special</h1>
+
+    <div class="card">
+       <a href="#" id="onionparantha"><img src="paratha.jpeg" alt="onionparantha" width="200" height="200"></a>
+        <p class="price">$5.99</p>
+        <p>Onion Parantha </p>
+        <a id="form"href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+        </div>
+
+    <div class="card">
+        <a href="#" id="alooParantha"><img src="parantha.jpg" alt="alooparantha" width="200" height="200"></a>
+        <p class="price">$5.99</p>
+        <p>Aloo Parantha </p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+  
+    <div class="card">
+        <a href="#" id="sandwitch"><img src="sandwitch.jpg" alt="sandwitch" width="200" height="200"></a>
+        <p class="price">$4.99</p>
+        <p> Sandwich</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="card">
+        <a href="#" id="omlette"><img src="fires.jpg" alt="omlette" width="200" height="200"></a>
+        <p class="price">$6.99</p>
+        <p> Omlette with Fries</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <h1 id="chaat"> Chaat Corner</h1>
+
+    <div class="cards">
+        <a href="#" id="panipuri"><img src="pani-puri.jpg" alt="panipuri" width="200" height="200"></a>
+        <p class="price">$8.99</p>
+        <p>PaniPuri</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="pav bhaji"><img src="pav-bhaji.jpg" alt="pav-bhaji" width="200" height="200"></a>
+        <p class="price">$7.50</p>
+        <p>Pav Bhaji</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+
+    <div class="cards">
+        <a href="#" id="tikki chat"><img src="tikki-chat.jpg" alt="tikki-chat" width="200" height="200"></a>
+        <p class="price">$8.99</p>
+        <p>Tikki Chat</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="samosa"><img src="samosa.jpg" alt="samosa" width="200" height="200"></a>
+        <p class="price">$6.99</p>
+        <p>Samosa</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <h1 id="Appetizers"> Appetizers </h1>
+
+    <div class="cards">
+        <a href="#" id="chana bhatura"><img src="chanabathura.jpg" alt="chana bhatura" width="200" height="200"></a>
+        <p class="price">$5.99</p>
+        <p>Chana Bhatura</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="paneer pakoda"><img src="paneer.jpg" alt="paneer pakoda" width="200" height="200"></a>
+        <P class="price">$8.99</P>
+        <p>Paneer Pakoda</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="fish pakoda"><img src="fish.jpg" alt="fish pakoda" width="200" height="200"></a>
+        <p class="price">$9.99</p>
+        <p>Fish Pakoda</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="Veggie-roll"><img src="vegg.jpg" alt="veggie roll" width="200" height="200"></a>
+        <p class="price">$8.99</p>
+        <p>Veggie roll</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <h1 id="veg"> Vegetarian Food</h1>
+
+    <div class="cards">
+        <a href="#" id="dal makhni"><img src="dal.jpg" alt="dal makhni" width="200" height="200"></a>
+        <p class="price">$9.99</p>
+        <p>Dal Makhni</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="shahi paneer"><img src="shahi.jpg" alt="shahi paneer" width="200" height="200"></a>
+        <p class="price">$10.99</p>
+        <p>Shahi Paneer</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="saag"><img src="saag.jpg" alt="saag" width="200" height="200"></a>
+        <p class="price">$11.50</p>
+        <p>Saag</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="mix-veg"><img src="mix.jpg" alt="mix veg" width="200" height="200"></a>
+        <p class="price">$8.99</p>
+        <p>Mix Veg</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <h1 id="Nveg">Non-Veg</h1>
+
+    <div class="cards">
+        <a href="#" id="chicken-tikka"><img src="chicken.jpg" alt="chicken-tikka" width="200" height="200"></a>
+        <p class="price">$12.99</p>
+        <p>Chicken Tikka</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="tandoori-chicken"><img src="tandoori.jpg" alt="tandoori-chicken" width="200" height="200"></a>
+        <p class="price">$12.50</p>
+        <p>Tandoori Chicken</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="fish curry"><img src="curry.jpg" alt="fish curry" width="200" height="200"></a>
+        <p class="price">$13.50</p>
+        <p>Fish Curry</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="fish biryani"><img src="biryani.jpg" alt="fish biryani" width="200" height="200"></a>
+        <p class="price">$10.99</p>
+        <p>Fish Biryani</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <h1 id="d">Desserts</h1>
+
+    <div class="cards">
+        <a href="#" id="ice cream"><img src="ice.jpg" alt="ice cream" width="200" height="200"></a>
+        <p class="price">$7.99</p>
+        <p>Ice Cream</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="rasmalai"><img src="ras.jpg" alt="rasmalai" width="200" height="200"></a>
+        <p class="price">$6.99</p>
+        <p>Rasmalai</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="choco lava cake"><img src="cake.jpg" alt="choco lava cake" width="200" height="200"></a>
+        <p class="price">$8.99</p>
+        <p>Choco Lava Cake</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="gulabjamun"><img src="gul.jpg" alt="gulabjamun" width="200" height="200"></a>
+        <p class="price">$5.99</p>
+        <p>Gulabjamun</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <h1 id="Dr">Drinks</h1>
+
+    <div class="cards">
+        <a href="#" id="mango juice"><img src="Mango.jpg" alt="mangojuice" width="200" height="200"></a>
+        <p class="price">$5.99</p>
+        <p>Mango Juice</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="tea"><img src="tea.jpg" alt="tea" width="200" height="200"></a>
+        <p class="price">$3.99</p>
+        <p>Tea</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="mojito"><img src="mojito.jpg" alt="mojito" width="200" height="200"></a>
+        <p class="price">$7.99</p>
+        <p>Mojito</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+    </div>
+
+    <div class="cards">
+        <a href="#" id="coffee"><img src="coffee.jpg" alt="coffee" width="200" height="200"></a>
+        <p class="price">$6.99</p>
+        <p>Coffee</p>
+        <a id="form" href="/forms.html"><p><button onclick="clickable()">Add to Cart</button></p></a>
+
+    </div>
+</div>
+
+<table>
+    <tr>
+      <th>Team Members</th>
+      <th>Contact Us</th>
+      
+    </tr>
+    <tr>
+      <td>Bidhan Shrestha</td>
+      <td>bidhan.shrestha@triosstudent.com</td>
+    <tr>
+        <td>Kiran Lehal</td>
+      <td>Kirandeepkaur.Lehal@triosstudent.com
+    </tr>
+    
+  </table>
+
+  <!-- this is Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">BreakFast</a></li>
+                    <li><a href="#">Dinner</a></li>
+                    <li><a href="#">Appetizers</a></li>
+                    <li><a href="#">dressert</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</footer>
+
+</body>
+
+</html>
+
